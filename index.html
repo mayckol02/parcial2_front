@@ -7,125 +7,125 @@
   <style>
     /* Estilos Generales y Layout de la página */
     body {
-      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Usar una fuente similar a la de Facebook */
-      background-color: #f0f2f5; /* Fondo más claro */
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      margin: 0;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Usar una fuente similar a la de Facebook */
+        background-color: #f0f2f5; /* Fondo más claro */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        margin: 0;
     }
 
     /* Contenedor Principal de la Interfaz */
     .main-container {
-      display: flex;
-      width: 980px; /* Ancho típico de la interfaz de Facebook en escritorio */
-      justify-content: space-between;
-      align-items: center; /* Centrar verticalmente ambos lados */
-      padding: 20px;
+        display: flex;
+        width: 980px; /* Ancho típico de la interfaz de Facebook en escritorio */
+        justify-content: space-between;
+        align-items: center; /* Centrar verticalmente ambos lados */
+        padding: 20px;
     }
 
     /* Estilos del contenido izquierdo (Logo y texto) */
     .left-content {
-      width: 500px;
-      margin-bottom: 100px; /* Desplazar ligeramente hacia arriba el contenido izq. para centrado visual */
+        width: 500px;
+        margin-bottom: 100px; /* Desplazar ligeramente hacia arriba el contenido izq. para centrado visual */
     }
 
     .facebook-logo {
-      font-size: 58px;
-      color: #1877f2;
-      font-weight: bold;
-      margin-bottom: 0;
+        font-size: 58px;
+        color: #1877f2;
+        font-weight: bold;
+        margin-bottom: 0;
     }
 
     .tagline {
-      font-size: 28px;
-      color: #1c1e21;
-      margin-top: 10px;
-      line-height: 32px;
-      font-weight: normal;
+        font-size: 28px;
+        color: #1c1e21;
+        margin-top: 10px;
+        line-height: 32px;
+        font-weight: normal;
     }
 
     /* Estilos del Contenedor del Formulario */
     .login-container {
-      background-color: white;
-      padding: 15px 15px 25px 15px; /* Ajuste de padding */
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1); /* Sombra más definida */
-      width: 396px; /* Ancho del formulario */
-      text-align: center;
+        background-color: white;
+        padding: 15px 15px 25px 15px; /* Ajuste de padding */
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1); /* Sombra más definida */
+        width: 396px; /* Ancho del formulario */
+        text-align: center;
     }
 
     /* Estilos para los campos de entrada (input) */
     .input-field {
-      width: calc(100% - 22px);
-      padding: 14px 16px; /* Aumentar el padding para inputs */
-      margin: 8px 0;
-      border: 1px solid #dddfe2; /* Borde más sutil */
-      border-radius: 6px;
-      font-size: 17px;
-      box-sizing: border-box; /* Incluir padding y borde en el ancho total */
+        width: calc(100% - 22px);
+        padding: 14px 16px; /* Aumentar el padding para inputs */
+        margin: 8px 0;
+        border: 1px solid #dddfe2; /* Borde más sutil */
+        border-radius: 6px;
+        font-size: 17px;
+        box-sizing: border-box; /* Incluir padding y borde en el ancho total */
     }
 
     .input-field:focus {
-      outline: none;
-      border-color: #1877f2; /* Borde azul al enfocar */
-      box-shadow: 0 0 0 1px #1877f2;
+        outline: none;
+        border-color: #1877f2; /* Borde azul al enfocar */
+        box-shadow: 0 0 0 1px #1877f2;
     }
 
     /* Estilos para el botón de Iniciar Sesión */
     .login-button {
-      width: 100%;
-      padding: 12px 0;
-      background-color: #1877f2; /* Azul principal de Facebook */
-      border: none;
-      color: white;
-      border-radius: 6px;
-      font-size: 20px;
-      font-weight: bold;
-      cursor: pointer;
-      margin-top: 5px;
+        width: 100%;
+        padding: 12px 0;
+        background-color: #1877f2; /* Azul principal de Facebook */
+        border: none;
+        color: white;
+        border-radius: 6px;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        margin-top: 5px;
     }
 
     .login-button:hover {
-      background-color: #166fe5; /* Azul más oscuro al pasar el ratón */
+        background-color: #166fe5; /* Azul más oscuro al pasar el ratón */
     }
 
     /* Estilos para el enlace "¿Olvidaste tu contraseña?" */
     .forgot-password {
-      display: block;
-      text-decoration: none;
-      color: #1877f2;
-      font-size: 14px;
-      margin-top: 15px;
-      margin-bottom: 20px;
+        display: block;
+        text-decoration: none;
+        color: #1877f2;
+        font-size: 14px;
+        margin-top: 15px;
+        margin-bottom: 20px;
     }
 
     .forgot-password:hover {
-      text-decoration: underline;
+        text-decoration: underline;
     }
 
     /* Estilo para la línea divisoria */
     .divider {
-      border-bottom: 1px solid #dadde1;
-      margin: 20px 0;
+        border-bottom: 1px solid #dadde1;
+        margin: 20px 0;
     }
 
     /* Estilos para el texto de 'Crear una página...' */
     .create-page-text {
-      margin-top: 25px;
-      font-size: 14px;
-      color: #1c1e21;
+        margin-top: 25px;
+        font-size: 14px;
+        color: #1c1e21;
     }
 
     .create-page-link {
-      font-weight: bold;
-      text-decoration: none;
-      color: #1c1e21;
+        font-weight: bold;
+        text-decoration: none;
+        color: #1c1e21;
     }
 
     .create-page-link:hover {
-      text-decoration: underline;
+        text-decoration: underline;
     }
 
   </style>
